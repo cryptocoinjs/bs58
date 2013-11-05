@@ -1,0 +1,24 @@
+{
+  "name": "cryptocoin-base58",
+  "version": "0.0.1",
+  "description": "Base58 check encoding",
+  "keywords": [
+    "crytography",
+    "crypto",
+    "bitcoin",
+    "base58",
+    "encoding",
+    "decoding",
+    "encode",
+    "decode",
+    "litecoin"
+  ],
+  "repo": "http://github.com/cryptocoinjs/base58",
+  "scripts": [
+    "./lib/base58.js"
+  ],
+  "main": "./lib/base58.js",
+  "dependencies": {
+    "cryptocoinjs/bigint": "0.0.x"
+  }
+}
