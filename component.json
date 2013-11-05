@@ -1,5 +1,5 @@
 {
-  "name": "cryptocoin-base58",
+  "name": "base58",
   "version": "0.0.1",
   "description": "Base58 check encoding",
   "keywords": [
