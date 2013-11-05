@@ -35,14 +35,16 @@ Install
 Usage
 -----
 
+### encode(arrayOfBytes)
 
+### decode(base58str)
 
 
 
 Credits
 -------
 
-
+Most of the code from Stefan Thomas in https://github.com/bitcoinjs/bitcoinjs-lib
 
 
 License
