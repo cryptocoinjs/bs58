@@ -16,7 +16,8 @@
   "ignore": [
     "node_modules",
     ".DS_Store",
-    "references"
+    "component.json",
+    "package.json"
   ],
   "dependencies": {
     "cryptocoin-bigint": "0.0.x"
