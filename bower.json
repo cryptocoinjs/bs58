@@ -1,6 +1,6 @@
 {
   "name": "cryptocoin-base58",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Base58 check encoding",
   "keywords": [
     "crytography",
