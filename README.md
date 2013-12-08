@@ -1,4 +1,4 @@
-B58
+bs58
 ===
 
 JavaScript component to compute [Base58](https://en.bitcoin.it/wiki/Base58Check_encoding) check encoding for Bitcoin.
@@ -13,22 +13,22 @@ Install
 
 ### Node.js/Browserify
 
-    npm install --save B58
+    npm install --save bs58
 
 ### Component
 
-    component install cryptocoinjs/B58
+    component install cryptocoinjs/bs58
 
 
 ### Bower
 
-    bower install B58
+    bower install bs58
 
 
 ### Script
 
 ```html
-<script src="/path/to/B58.js"></script>
+<script src="/path/to/bs58.js"></script>
 ```
 
 
