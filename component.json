@@ -1,5 +1,5 @@
 {
-  "name": "B58",
+  "name": "bs58",
   "version": "0.1.0",
   "description": "Base58 check encoding",
   "keywords": [
@@ -15,9 +15,9 @@
   ],
   "repo": "http://github.com/cryptocoinjs/base58",
   "scripts": [
-    "./lib/B58.js"
+    "./lib/bs58.js"
   ],
-  "main": "./lib/B58.js",
+  "main": "./lib/bs58.js",
   "dependencies": {
     "cryptocoinjs/bigi": "0.2.x"
   }

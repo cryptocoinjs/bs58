@@ -1,4 +1,4 @@
-var base58 = require('../lib/B58')
+var base58 = require('../lib/bs58')
   , conv = require('convert-hex')
 
 require('terst')
