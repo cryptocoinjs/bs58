@@ -19,6 +19,6 @@
   ],
   "main": "./lib/B58.js",
   "dependencies": {
-    "cryptocoinjs/bigint": "0.0.x"
+    "cryptocoinjs/bigi": "0.2.x"
   }
 }

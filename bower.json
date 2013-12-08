@@ -20,7 +20,7 @@
     "package.json"
   ],
   "dependencies": {
-    "cryptocoin-bigint": "0.0.x"
+    "bigi": "0.2.x"
   },
   "repo": "http://github.com/cryptocoinjs/B58",
   "main": "./lib/B58.js"
