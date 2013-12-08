@@ -1,4 +1,4 @@
-var base58 = require('../lib/base58')
+var base58 = require('../lib/B58')
   , conv = require('cryptocoin-convert-hex')
 
 require('terst')
