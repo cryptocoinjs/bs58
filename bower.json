@@ -22,6 +22,6 @@
   "dependencies": {
     "bigi": "0.2.x"
   },
-  "repo": "http://github.com/cryptocoinjs/B58",
+  "repo": "http://github.com/cryptocoinjs/bs58",
   "main": "./lib/bs58.js"
 }

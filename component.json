@@ -13,7 +13,7 @@
     "decode",
     "litecoin"
   ],
-  "repo": "http://github.com/cryptocoinjs/base58",
+  "repo": "http://github.com/cryptocoinjs/bs58",
   "scripts": [
     "./lib/bs58.js"
   ],

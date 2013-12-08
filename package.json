@@ -19,7 +19,7 @@
     "convert-hex": "0.1.*"
   },
   "repository": {
-    "url": "http://github.com/cryptocoinjs/base58",
+    "url": "http://github.com/cryptocoinjs/bs58",
     "type": "git"
   },
   "main": "./lib/bs58.js",
