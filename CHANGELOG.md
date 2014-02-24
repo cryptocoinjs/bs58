@@ -1,3 +1,8 @@
+0.2.1 / 2014-02-24
+------------------
+* removed bower and component support. Closes #1
+* convert from 4 spaces to 2
+
 0.2.0 / 2013-12-07
 ------------------
 * renamed from `cryptocoin-base58` to `bs58`
