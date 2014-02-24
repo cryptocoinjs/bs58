@@ -15,8 +15,9 @@
   ],
   "devDependencies": {
     "mocha": "1.*",
-    "terst": "0.0.1",
-    "convert-hex": "0.1.*"
+    "terst": "0.0.2",
+    "binstring": "~0.2.0",
+    "mochify": "~0.4.2"
   },
   "repository": {
     "url": "http://github.com/cryptocoinjs/bs58",
@@ -24,6 +25,7 @@
   },
   "main": "./lib/bs58.js",
   "dependencies": {
-    "bigi": "0.2.0"
+    "bigi": "0.2.0",
+    "binstring": "~0.2.0"
   }
 }
