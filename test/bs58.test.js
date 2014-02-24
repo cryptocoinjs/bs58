@@ -34,7 +34,7 @@ describe('+ encode(input)', function() {
   })
 })
 
-describe.skip('+ decode(input)', function() {
+describe('+ decode(input)', function() {
   describe('> when a byte array is input', function() {
     it('should convert to a a byte array', function() {
       var address = "16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS";
