@@ -1,3 +1,7 @@
+0.3.0 / 2014-02-24
+------------------
+* duck type input to `encode` and change output of `decode` to `Buffer`.
+
 0.2.1 / 2014-02-24
 ------------------
 * removed bower and component support. Closes #1
