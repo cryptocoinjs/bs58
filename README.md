@@ -11,6 +11,16 @@ Usage
 
     npm install --save bs58
 
+### browser
+
+You can use this module in the browser. Install [Browserify](https://github.com/substack/node-browserify):
+
+    npm install -g browserify
+
+then run:
+
+    browserify < lib/bs58.js > lib/bs85.bundle.js
+
 
 Api
 ---
