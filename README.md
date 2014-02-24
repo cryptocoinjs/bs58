@@ -39,7 +39,7 @@ var out = base58.encode(unencodedData);
 console.log(out); // => 16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS"
 ```
 
-** example (byte array)**:
+**example (byte array)**:
 
 ```js
 var base58 = require('bs58');
@@ -50,7 +50,7 @@ var out = base58.encode(conv(unencodedData: {in: 'hex', out: 'bytes'}));
 console.log(out); // => 16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS"
 ```
 
-** example (Buffer)**:
+**example (Buffer)**:
 
 ```js
 var base58 = require('bs58');
