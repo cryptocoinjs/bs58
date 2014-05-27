@@ -14,9 +14,12 @@
     "litecoin"
   ],
   "devDependencies": {
-    "mocha": "1.*",
+    "mocha": "^1.19.0",
     "terst": "^0.1.0",
-    "mochify": "~0.4.2"
+    "mochify": "~0.4.2",
+    "coveralls": "^2.10.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "istanbul": "^0.2.10"
   },
   "repository": {
     "url": "http://github.com/cryptocoinjs/bs58",
@@ -25,5 +28,9 @@
   "main": "./lib/bs58.js",
   "dependencies": {
     "bigi": "^1.1.0"
+  },
+  "scripts": {
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
+    "coveralls": "npm run-script coverage && node ./node_modules/.bin/coveralls < coverage/lcov.info"
   }
 }

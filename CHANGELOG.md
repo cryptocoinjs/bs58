@@ -1,3 +1,10 @@
+x.y.z / 2014-05-dd
+------------------
+* removed `binstring` dep, `Buffer` now only input to `encode()` and output of `decode()`
+* update `bigi` from `~0.3.0` to `^1.1.0`
+* added travis-ci support
+
+
 0.3.0 / 2014-02-24
 ------------------
 * duck type input to `encode` and change output of `decode` to `Buffer`.
