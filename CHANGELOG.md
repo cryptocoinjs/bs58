@@ -1,9 +1,9 @@
-x.y.z / 2014-05-dd
+1.0.0 / 2014-05-27
 ------------------
 * removed `binstring` dep, `Buffer` now only input to `encode()` and output of `decode()`
 * update `bigi` from `~0.3.0` to `^1.1.0`
 * added travis-ci support
-
+* added coveralls support
 
 0.3.0 / 2014-02-24
 ------------------
