@@ -24,6 +24,6 @@
   },
   "main": "./lib/bs58.js",
   "dependencies": {
-    "bigi": "0.2.0"
+    "bigi": "^1.1.0"
   }
 }
