@@ -1,7 +1,7 @@
 {
   "name": "bs58",
   "version": "0.3.0",
-  "description": "Base58 check encoding",
+  "description": "Base 58 encoding / decoding",
   "keywords": [
     "crytography",
     "crypto",
@@ -15,8 +15,7 @@
   ],
   "devDependencies": {
     "mocha": "1.*",
-    "terst": "0.0.2",
-    "binstring": "~0.2.0",
+    "terst": "^0.1.0",
     "mochify": "~0.4.2"
   },
   "repository": {
