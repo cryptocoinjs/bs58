@@ -4,6 +4,7 @@
 * update `bigi` from `~0.3.0` to `^1.1.0`
 * added travis-ci support
 * added coveralls support
+* modified tests and library to handle fixture style testing (thanks to bitcoinjs-lib devs)
 
 0.3.0 / 2014-02-24
 ------------------
