@@ -1,6 +1,6 @@
-1.x.y / DD-MM-YYYY
+1.1.0 / 2014-06-26
 ------------------
-* user `Buffer` internally for calculations, providing cleaner code and a performance increase.
+* user `Buffer` internally for calculations, providing cleaner code and a performance increase. [Daniel Cousens](https://github.com/cryptocoinjs/bs58/commit/129c71de8bc1e36f113bce06da0616066f41c5ca)
 
 
 1.0.0 / 2014-05-27
