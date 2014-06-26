@@ -3,23 +3,23 @@
   "version": "1.0.0",
   "description": "Base 58 encoding / decoding",
   "keywords": [
-    "crytography",
-    "crypto",
-    "bitcoin",
     "base58",
-    "encoding",
+    "bitcoin",
+    "crypto",
+    "crytography",
+    "decode",
     "decoding",
     "encode",
-    "decode",
+    "encoding",
     "litecoin"
   ],
   "devDependencies": {
-    "mocha": "^1.19.0",
-    "terst": "^0.1.0",
-    "mochify": "~0.4.2",
     "coveralls": "^2.10.0",
+    "istanbul": "^0.2.10",
+    "jshint": "2.5.1",
+    "mocha": "^1.19.0",
     "mocha-lcov-reporter": "0.0.1",
-    "istanbul": "^0.2.10"
+    "mochify": "~0.4.2"
   },
   "repository": {
     "url": "http://github.com/cryptocoinjs/bs58",
