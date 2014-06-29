@@ -1,6 +1,6 @@
 {
   "name": "bs58",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Base 58 encoding / decoding",
   "keywords": [
     "base58",
@@ -26,9 +26,6 @@
     "type": "git"
   },
   "main": "./lib/bs58.js",
-  "dependencies": {
-    "bigi": "^1.1.0"
-  },
   "scripts": {
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
     "coveralls": "npm run-script coverage && node ./node_modules/.bin/coveralls < coverage/lcov.info",
