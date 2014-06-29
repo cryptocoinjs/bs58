@@ -1,6 +1,6 @@
-1.x.y / 2014-06-29
+1.2.0 / 2014-06-29
 ------------------
-* removed `bigi` dep, implemented direct byte conversion
+* removed `bigi` dep, implemented direct byte conversion [Jared Deckard / #6](https://github.com/cryptocoinjs/bs58/pull/6)
 
 1.1.0 / 2014-06-26
 ------------------
