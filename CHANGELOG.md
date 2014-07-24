@@ -1,3 +1,7 @@
+1.2.1 / 2014-07-24
+------------------
+* speed optimizations [Daniel Cousens / #8](https://github.com/cryptocoinjs/bs58/pull/8)
+
 1.2.0 / 2014-06-29
 ------------------
 * removed `bigi` dep, implemented direct byte conversion [Jared Deckard / #6](https://github.com/cryptocoinjs/bs58/pull/6)
