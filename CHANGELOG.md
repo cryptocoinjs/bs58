@@ -1,3 +1,7 @@
+2.0.0 / 2014-10-03
+------------------
+- `decode` now returns an `Array` instead of `Buffer` to keep things simple. [Daniel Cousens / #9](https://github.com/cryptocoinjs/bs58/pull/9)
+
 1.2.1 / 2014-07-24
 ------------------
 * speed optimizations [Daniel Cousens / #8](https://github.com/cryptocoinjs/bs58/pull/8)
