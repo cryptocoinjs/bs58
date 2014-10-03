@@ -17,7 +17,7 @@ describe('base58', function() {
   describe('decode', function() {
     fixtures.valid.forEach(function(f) {
       it('can decode ' + f.string, function() {
-        var actual = base58.decode(f.string).toString('hex')
+        var actual = new Buffer(base58.decode(f.string)).toString('hex')
 
         assert.strictEqual(actual, f.hex)
       })
