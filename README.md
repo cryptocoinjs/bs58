@@ -7,7 +7,9 @@ bs58
 
 JavaScript component to compute base 58 encoding. This encoding is typically used for crypto currencies such as Bitcoin.
 
-Full documentation: http://cryptocoinjs.com/modules/misc/bs58/
+### Documentation
+
+http://cryptocoinjs.com/modules/misc/bs58/
 
 
 Credits
