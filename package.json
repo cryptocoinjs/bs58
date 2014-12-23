@@ -19,7 +19,7 @@
     "jshint": "2.5.1",
     "mocha": "^1.21.4",
     "mocha-lcov-reporter": "0.0.1",
-    "mochify": "~0.4.2"
+    "mochify": "^2.1.0"
   },
   "repository": {
     "url": "http://github.com/cryptocoinjs/bs58",
