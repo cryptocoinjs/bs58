@@ -3,3 +3,5 @@ test/
 .DS_Store
 Makefile
 coverage/
+.min-wd
+.travis.yml
