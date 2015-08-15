@@ -33,4 +33,18 @@ describe('base58', function () {
       })
     })
   })
+
+  describe('valid', function () {
+    fixtures.valid.forEach(function (f) {
+      it('returns true for ' + f.string, function () {
+        assert(base58.valid(f.string))
+      })
+    })
+
+    fixtures.invalid.forEach(function (f) {
+      it('returns false for ' + f.description + ' (' + f.string + ')', function () {
+        assert(!base58.valid(f.string))
+      })
+    })
+  })
 })
