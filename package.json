@@ -25,7 +25,7 @@
     "url": "http://github.com/cryptocoinjs/bs58",
     "type": "git"
   },
-  "main": "./lib/bs58.js",
+  "main": "index.js",
   "scripts": {
     "browser-test": "mochify --wd -R spec",
     "coverage": "istanbul cover _mocha -- --reporter list test/*.js",
