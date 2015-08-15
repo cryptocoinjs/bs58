@@ -2,6 +2,9 @@
 [![build status](https://secure.travis-ci.org/cryptocoinjs/bs58.png)](http://travis-ci.org/cryptocoinjs/bs58)
 [![Coverage Status](https://img.shields.io/coveralls/cryptocoinjs/bs58.svg)](https://coveralls.io/r/cryptocoinjs/bs58)
 
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+
 bs58
 ====
 
