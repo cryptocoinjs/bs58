@@ -29,7 +29,7 @@
   "scripts": {
     "browser-test": "mochify --wd -R spec",
     "coverage": "istanbul cover _mocha -- --reporter list test/*.js",
-    "coveralls": "npm run coverage && node coveralls < coverage/lcov.info",
+    "coveralls": "npm run coverage && coveralls < coverage/lcov.info",
     "standard": "standard",
     "test": "npm run standard && npm run unit",
     "unit": "mocha"
