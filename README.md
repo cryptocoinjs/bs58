@@ -64,3 +64,9 @@ Credits
 - [Stephan Pair](https://github.com/gasteve) for buffer improvements
 - [Daniel Cousens](https://github.com/dcousens) for cleanup and merging improvements from bitcoinjs-lib
 - [Jared Deckard](https://github.com/deckar01) for killing `bigi` as a dependency
+
+
+License
+-------
+
+MIT

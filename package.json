@@ -13,6 +13,7 @@
     "encoding",
     "litecoin"
   ],
+  "license": "MIT",
   "devDependencies": {
     "mocha": "^2.0.0",
     "mochify": "^2.1.0",
