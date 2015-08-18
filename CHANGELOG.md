@@ -1,3 +1,7 @@
+3.0.0 / 2015-08-18
+------------------
+- refactored module into generic [`base-x`](https://github.com/cryptocoinjs/base-x).
+
 2.0.1 / 2014-12-23
 ------------------
 - performance boost in `encode()` [#10](https://github.com/cryptocoinjs/bs58/pull/10)
