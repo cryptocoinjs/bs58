@@ -5,6 +5,8 @@ bs58
 
 JavaScript component to compute base 58 encoding. This encoding is typically used for crypto currencies such as Bitcoin.
 
+**Note:** If you're looking for Base 58 check encoding, see: https://github.com/bitcoinjs/bs58check, which depends upon this library.
+
 
 Install
 -------
