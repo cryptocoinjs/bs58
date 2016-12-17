@@ -31,6 +31,6 @@
     "unit": "mocha"
   },
   "dependencies": {
-    "base-x": "^1.1.0"
+    "base-x": "^2.0.1"
   }
 }
