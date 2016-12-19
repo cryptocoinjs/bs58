@@ -1,3 +1,7 @@
+4.0.0 / 2016-12-3
+------------------
+- `decode` now returns a `Buffer` again,  to avoid potential cryptographic errors. [Daniel Cousens / #21](https://github.com/cryptocoinjs/bs58/pull/21)
+
 3.0.0 / 2015-08-18
 ------------------
 - refactored module into generic [`base-x`](https://github.com/cryptocoinjs/base-x).
