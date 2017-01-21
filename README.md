@@ -24,11 +24,12 @@ API
 **example**:
 
 ```js
-var bs58 = require('bs58')
+const bs58 = require('bs58')
 
-var unencodedData = "003c176e659bea0f29a3e9bf7880c112b1b31b4dc826268187"
-var out = bs58.encode(new Buffer(unencodedData, 'hex'))
-console.log(out) // => 16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS
+const bytes = Buffer.from('003c176e659bea0f29a3e9bf7880c112b1b31b4dc826268187', 'hex')
+const address = bs58.encode(bytes)
+console.log(address)
+// => 16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS
 ```
 
 
@@ -39,10 +40,10 @@ console.log(out) // => 16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS
 **example**:
 
 ```js
-var bs58 = require('bs58')
+const bs58 = require('bs58')
 
-var address = "16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS"
-var out = bs58.decode(address)
+const address = '16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS'
+const bytes = bs58.decode(address)
 console.log(out.toString('hex'))
 // => 003c176e659bea0f29a3e9bf7880c112b1b31b4dc826268187
 ```
