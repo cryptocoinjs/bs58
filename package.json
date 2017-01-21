@@ -15,9 +15,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^2.0.0",
-    "mochify": "^2.1.0",
-    "standard": "^8.6.0"
+    "standard": "*",
+    "tape": "^4.6.3"
   },
   "repository": {
     "url": "https://github.com/cryptocoinjs/bs58",
@@ -28,10 +27,9 @@
   ],
   "main": "./index.js",
   "scripts": {
-    "browser-test": "mochify --wd -R spec",
     "standard": "standard",
     "test": "npm run standard && npm run unit",
-    "unit": "mocha"
+    "unit": "tape test/index.js"
   },
   "dependencies": {
     "base-x": "^2.0.1"
