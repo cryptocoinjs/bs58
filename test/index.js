@@ -1,36 +1,41 @@
-/* global describe, it */
-
-var assert = require('assert')
+var test = require('tape')
 var base58 = require('../')
 
 var fixtures = require('./fixtures.json')
 
-describe('base58', function () {
-  describe('encode', function () {
+test('base58', function (t) {
+  t.test('encode', function (t) {
     fixtures.valid.forEach(function (f) {
-      it('can encode ' + f.hex, function () {
-        var actual = base58.encode(new Buffer(f.hex, 'hex'))
-
-        assert.strictEqual(actual, f.string)
+      t.test('can encode ' + f.hex, function (t) {
+        var actual = base58.encode(Buffer.from(f.hex, 'hex'))
+        t.equal(actual, f.string)
+        t.end()
       })
     })
+
+    t.end()
   })
 
-  describe('decode', function () {
+  t.test('decode', function (t) {
     fixtures.valid.forEach(function (f) {
-      it('can decode ' + f.string, function () {
+      t.test('can decode ' + f.string, function (t) {
         var actual = base58.decode(f.string).toString('hex')
-
-        assert.strictEqual(actual, f.hex)
+        t.same(actual, f.hex)
+        t.end()
       })
     })
 
     fixtures.invalid.forEach(function (f) {
-      it('throws on ' + f.description, function () {
-        assert.throws(function () {
+      t.test('throws on ' + f.description, function (t) {
+        t.throws(function () {
           base58.decode(f.string)
-        }, /Non-base58 character/)
+        }, /^Error: Non-base58 character$/)
+        t.end()
       })
     })
+
+    t.end()
   })
+
+  t.end()
 })
