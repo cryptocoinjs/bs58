@@ -20,7 +20,7 @@
     "standard": "^8.6.0"
   },
   "repository": {
-    "url": "http://github.com/cryptocoinjs/bs58",
+    "url": "https://github.com/cryptocoinjs/bs58",
     "type": "git"
   },
   "main": "index.js",
