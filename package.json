@@ -23,7 +23,10 @@
     "url": "https://github.com/cryptocoinjs/bs58",
     "type": "git"
   },
-  "main": "index.js",
+  "files": [
+    "./index.js"
+  ],
+  "main": "./index.js",
   "scripts": {
     "browser-test": "mochify --wd -R spec",
     "standard": "standard",
