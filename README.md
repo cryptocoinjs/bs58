@@ -1,7 +1,7 @@
 bs58
 ====
 
-[![build status](https://secure.travis-ci.org/cryptocoinjs/bs58.png)](http://travis-ci.org/cryptocoinjs/bs58)
+[![build status](https://travis-ci.org/cryptocoinjs/bs58.svg)](http://travis-ci.org/cryptocoinjs/bs58)
 
 JavaScript component to compute base 58 encoding. This encoding is typically used for crypto currencies such as Bitcoin.
 
