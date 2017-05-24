@@ -32,6 +32,6 @@
     "unit": "tape test/index.js"
   },
   "dependencies": {
-    "base-x": "^2.0.1"
+    "base-x": "^3.0.2"
   }
 }
