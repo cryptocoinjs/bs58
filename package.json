@@ -1,6 +1,6 @@
 {
   "name": "bs58",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Base 58 encoding / decoding",
   "keywords": [
     "base58",
