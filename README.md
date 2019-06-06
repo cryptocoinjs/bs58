@@ -48,6 +48,20 @@ console.log(bytes.toString('hex'))
 // => 003c176e659bea0f29a3e9bf7880c112b1b31b4dc826268187
 ```
 
+Browser
+-----------
+You can use this module in the browser. Install Browserify:
+
+```bash
+npm install -g browserify
+```
+
+then run:
+
+```bash
+browserify node_modules/bs58/index.js -o bs58.bundle.js --standalone bs58
+```
+
 Hack / Test
 -----------
 
