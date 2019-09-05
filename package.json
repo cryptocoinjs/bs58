@@ -1,6 +1,6 @@
 {
   "name": "bs58",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Base 58 encoding / decoding",
   "keywords": [
     "base58",
@@ -23,15 +23,17 @@
     "type": "git"
   },
   "files": [
-    "./index.js"
+    "./index.js",
+    "./index.d.ts"
   ],
   "main": "./index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "standard": "standard",
     "test": "npm run standard && npm run unit",
     "unit": "tape test/index.js"
   },
   "dependencies": {
-    "base-x": "^3.0.2"
+    "base-x": "^3.0.7"
   }
 }
