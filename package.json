@@ -1,6 +1,6 @@
 {
   "name": "bs58",
-  "version": "4.0.2",
+  "version": "5.0.0",
   "description": "Base 58 encoding / decoding",
   "keywords": [
     "base58",
@@ -15,7 +15,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "standard": "*",
+    "standard": "^16.0.4",
     "tape": "^4.6.3"
   },
   "repository": {
@@ -34,6 +34,6 @@
     "unit": "tape test/index.js"
   },
   "dependencies": {
-    "base-x": "^3.0.7"
+    "base-x": "^4.0.0"
   }
 }

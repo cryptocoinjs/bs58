@@ -19,7 +19,7 @@ test('base58', function (t) {
   t.test('decode', function (t) {
     fixtures.valid.forEach(function (f) {
       t.test('can decode ' + f.string, function (t) {
-        const actual = base58.decode(f.string).toString('hex')
+        const actual = Buffer.from(base58.decode(f.string)).toString('hex')
         t.same(actual, f.hex)
         t.end()
       })

@@ -19,14 +19,19 @@ API
 
 ### encode(input)
 
-`input` must be a [Buffer](https://nodejs.org/api/buffer.html) or an `Array`. It returns a `string`.
+`input` must be a `Uint8Array`, `Buffer`, or an `Array`. It returns a `string`.
 
 **example**:
 
 ```js
 const bs58 = require('bs58')
 
-const bytes = Buffer.from('003c176e659bea0f29a3e9bf7880c112b1b31b4dc826268187', 'hex')
+const bytes = Uint8Array.from([
+    0, 60,  23, 110, 101, 155, 234,
+   15, 41, 163, 233, 191, 120, 128,
+  193, 18, 177, 179,  27,  77, 200,
+   38, 38, 129, 135
+])
 const address = bs58.encode(bytes)
 console.log(address)
 // => 16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS
@@ -35,7 +40,7 @@ console.log(address)
 
 ### decode(input)
 
-`input` must be a base 58 encoded string. Returns a [Buffer](https://nodejs.org/api/buffer.html).
+`input` must be a base 58 encoded string. Returns a Uint8Array.
 
 **example**:
 
@@ -44,7 +49,8 @@ const bs58 = require('bs58')
 
 const address = '16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS'
 const bytes = bs58.decode(address)
-console.log(bytes.toString('hex'))
+// See uint8array-tools package for helpful hex encoding/decoding/compare tools
+console.log(Buffer.from(bytes).toString('hex'))
 // => 003c176e659bea0f29a3e9bf7880c112b1b31b4dc826268187
 ```
 
