@@ -1,3 +1,7 @@
+5.0.0 / 2022-02-17
+------------------
+- `decode` and `decodeUnsafe` now return a Uint8Array.
+
 4.0.0 / 2016-12-3
 ------------------
 - `decode` now returns a `Buffer` again,  to avoid potential cryptographic errors. [Daniel Cousens / #21](https://github.com/cryptocoinjs/bs58/pull/21)
