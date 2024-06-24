@@ -24,7 +24,7 @@ API
 **example**:
 
 ```js
-const bs58 = require('bs58')
+import bs58 from 'bs58'
 
 const bytes = Uint8Array.from([
     0, 60,  23, 110, 101, 155, 234,
@@ -45,7 +45,7 @@ console.log(address)
 **example**:
 
 ```js
-const bs58 = require('bs58')
+import bs58 from 'bs58'
 
 const address = '16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS'
 const bytes = bs58.decode(address)
@@ -65,7 +65,7 @@ npm install -g browserify
 then run:
 
 ```bash
-browserify node_modules/bs58/index.js -o bs58.bundle.js --standalone bs58
+browserify node_modules/bs58/cjs/index.cjs -o bs58.bundle.js --standalone bs58
 ```
 
 Hack / Test

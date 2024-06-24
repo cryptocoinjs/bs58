@@ -1,13 +1,15 @@
-const test = require('tape')
-const base58 = require('../')
+import tape from 'tape'
+import base58 from '../src/esm/index.js'
+import fixtures from './fixtures.json' assert { type: "json" }
 
-const fixtures = require('./fixtures.json')
+const { encode, decode } = base58
+const { valid, invalid } = fixtures
 
-test('base58', function (t) {
-  t.test('encode', function (t) {
-    fixtures.valid.forEach(function (f) {
-      t.test('can encode ' + f.hex, function (t) {
-        const actual = base58.encode(Buffer.from(f.hex, 'hex'))
+tape('base58', function (t) {
+  tape('encode', function (t) {
+    valid.forEach(function (f) {
+      tape('can encode ' + f.hex, function (t) {
+        const actual = encode(Buffer.from(f.hex, 'hex'))
         t.equal(actual, f.string)
         t.end()
       })
@@ -16,19 +18,19 @@ test('base58', function (t) {
     t.end()
   })
 
-  t.test('decode', function (t) {
-    fixtures.valid.forEach(function (f) {
-      t.test('can decode ' + f.string, function (t) {
-        const actual = Buffer.from(base58.decode(f.string)).toString('hex')
+  tape('decode', function (t) {
+    valid.forEach(function (f) {
+      tape('can decode ' + f.string, function (t) {
+        const actual = Buffer.from(decode(f.string)).toString('hex')
         t.same(actual, f.hex)
         t.end()
       })
     })
 
-    fixtures.invalid.forEach(function (f) {
-      t.test('throws on ' + f.description, function (t) {
+    invalid.forEach(function (f) {
+      tape('throws on ' + f.description, function (t) {
         t.throws(function () {
-          base58.decode(f.string)
+          decode(f.string)
         }, /^Error: Non-base58 character$/)
         t.end()
       })

@@ -1,6 +1,7 @@
 {
   "name": "bs58",
   "version": "5.0.0",
+  "type": "module",
   "description": "Base 58 encoding / decoding",
   "keywords": [
     "base58",
@@ -15,25 +16,39 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "standard": "^16.0.4",
-    "tape": "^4.6.3"
+    "@types/node": "^20.14.8",
+    "rimraf": "^5.0.7",
+    "tape": "^5.3.0",
+    "ts-standard": "^12.0.2",
+    "typescript": "^5.5.2"
   },
   "repository": {
     "url": "https://github.com/cryptocoinjs/bs58",
     "type": "git"
   },
   "files": [
-    "index.js",
-    "index.d.ts"
+    "src"
   ],
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "src/cjs/index.cjs",
+  "module": "src/esm/index.js",
+  "types": "src/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/esm/index.js",
+      "require": "./src/cjs/index.cjs",
+      "types": "./src/cjs/index.d.ts"
+    }
+  },
   "scripts": {
-    "standard": "standard",
+    "build": "npm run clean && tsc -p ./tsconfig.json && tsc -p ./tsconfig.cjs.json",
+    "clean": "rimraf src",
+    "gitdiff": "npm run build && git diff --exit-code",
+    "postbuild": "find src/cjs -type f -name \"*.js\" -exec bash -c 'mv \"$0\" \"${0%.js}.cjs\"' {} \\;",
+    "standard": "ts-standard --ignore src --ignore test",
     "test": "npm run standard && npm run unit",
     "unit": "tape test/index.js"
   },
   "dependencies": {
-    "base-x": "^4.0.0"
+    "base-x": "^5.0.0"
   }
 }
