@@ -27,8 +27,7 @@
     "type": "git"
   },
   "files": [
-    "src/cjs",
-    "src/esm"
+    "src"
   ],
   "main": "src/cjs/index.cjs",
   "module": "src/esm/index.js",
