@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+      "outDir": "src/esm",
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "module": "ESNext",
+      "moduleResolution": "Node"
+    },
+}
+  

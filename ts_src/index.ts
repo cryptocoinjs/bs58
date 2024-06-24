@@ -1,4 +1,4 @@
-const basex = require('base-x')
+import basex from 'base-x'
 const ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 
-module.exports = basex(ALPHABET)
+export default basex(ALPHABET)
