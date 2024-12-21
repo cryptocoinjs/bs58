@@ -34,16 +34,21 @@
   "types": "src/cjs/index.d.ts",
   "exports": {
     ".": {
-      "import": "./src/esm/index.js",
-      "require": "./src/cjs/index.cjs",
-      "types": "./src/cjs/index.d.ts"
+      "import": {
+        "types": "./src/esm/index.d.ts",
+        "default": "./src/esm/index.js"
+      },
+      "require": {
+        "types": "./src/cjs/index.d.cts",
+        "default": "./src/cjs/index.cjs"
+      }
     }
   },
   "scripts": {
     "build": "npm run clean && tsc -p ./tsconfig.json && tsc -p ./tsconfig.cjs.json",
     "clean": "rimraf src",
     "gitdiff": "npm run build && git diff --exit-code",
-    "postbuild": "find src/cjs -type f -name \"*.js\" -exec bash -c 'mv \"$0\" \"${0%.js}.cjs\"' {} \\;",
+    "postbuild": "find src/cjs -type f \\( -name \"*.js\" -o -name \"*.ts\" \\) -exec bash -c 'ext=\"${0##*.}\"; mv \"$0\" \"${0%.$ext}.c$ext\"' {} \\;",
     "standard": "ts-standard --ignore src --ignore test",
     "test": "npm run standard && npm run unit",
     "unit": "tape test/index.js"
